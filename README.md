@@ -3,11 +3,16 @@
 ## Quick start
 Load the image into matlab with `imread`:
 
-```matlab
+```Matlab
 Im = imread('/path/to/your/image.tiff'); %
 ```
 
 then run the program with the following command:
-```matlab
+```Matlab
 [rotIm, thetaIm] = detectAngleNRotate(Im);
 ```
+visualise the output with `plotSpotsImage` or `imagesc`:
+```Matlab
+figure(1)
+plotSpotsImage(rotIm);
+``` 
